@@ -24,6 +24,7 @@ public class Person {
    @Size(min=2, max=30, message="имя должно быть от 2 до 30 символов длиной")
     @Column(name="username")
     private String username;
+
    @Min(value = 1900, message = "человек должен быть моложе 1900 года рождения ")
    @Column(name="year_of_birth")
    private int yearOfBirth;
