@@ -11,11 +11,11 @@
   <input type="text" name="username" id="username"/>
   <br/>
   <label for="password">Введите пароль</label>
-  <input type="{noop}password" name="password" id="password"/>
+  <input type="password" name="password" id="password"/>
   <br/>
   <input type="submit" value="Login"/>
 
-  <div th:if="${param.error}" style="color:red">
+  <div th:if="${param.error}" style="color: red">
     Неправильные имя и пароль
   </div>
 

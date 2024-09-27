@@ -3,10 +3,12 @@ package ru.merkulova.springcourse.FirstSecurityApp.models;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 @Table(name="Person")
@@ -20,7 +22,7 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-   @NotEmpty(message = "Имя не должно быть пустым")
+    @NotBlank(message = "Password is required")
    @Size(min=2, max=30, message="имя должно быть от 2 до 30 символов длиной")
     @Column(name="username")
     private String username;
@@ -29,8 +31,9 @@ public class Person {
    @Column(name="year_of_birth")
    private int yearOfBirth;
 
-   @Column(name="password")
-   @Size(min=5, max=30, message="пароль должен быть от 2 до 30 символов")
+    @NotBlank(message = "Password is required")
+//    @Size(min=2, max=30, message="пароль должен быть от 2 до 30 символов")
+    @Column(name="password")
    private String password;
 
 }
