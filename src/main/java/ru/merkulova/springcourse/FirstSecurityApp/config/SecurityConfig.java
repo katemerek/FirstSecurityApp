@@ -47,7 +47,6 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {//конфигурируем сам Spring Security и авторизацию
         http
-                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth.requestMatchers("/auth/login", "/error", "/auth/registration").permitAll()
                         .anyRequest().authenticated())
                 .formLogin(form -> form
