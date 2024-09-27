@@ -1,10 +1,7 @@
 package ru.merkulova.springcourse.FirstSecurityApp.controllers;
 
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -23,7 +20,6 @@ public class AuthController {
         this.registrationService = registrationService;
     }
 
-
     @GetMapping("/login")
     private String login (){
         return "login";
@@ -40,7 +36,6 @@ public class AuthController {
             return "/registration";
         }
         registrationService.register(person);
-
 
         return "redirect:/auth/login";
     }
