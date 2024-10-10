@@ -1,14 +1,12 @@
-package ru.merkulova.springcourse.FirstSecurityApp.services;
+package com.github.katemerek.FirstSecurityApp.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import ru.merkulova.springcourse.FirstSecurityApp.models.Person;
-import ru.merkulova.springcourse.FirstSecurityApp.repositories.PeopleRepository;
-import ru.merkulova.springcourse.FirstSecurityApp.security.PersonDetails;
+import com.github.katemerek.FirstSecurityApp.models.Person;
+import com.github.katemerek.FirstSecurityApp.repositories.PeopleRepository;
+import com.github.katemerek.FirstSecurityApp.security.PersonDetails;
 
 import java.util.Optional;
 

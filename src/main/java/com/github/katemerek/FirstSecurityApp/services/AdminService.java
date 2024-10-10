@@ -1,4 +1,4 @@
-package ru.merkulova.springcourse.FirstSecurityApp.services;
+package com.github.katemerek.FirstSecurityApp.services;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;

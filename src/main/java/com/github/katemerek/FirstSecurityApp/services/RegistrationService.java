@@ -1,10 +1,10 @@
-package ru.merkulova.springcourse.FirstSecurityApp.services;
+package com.github.katemerek.FirstSecurityApp.services;
 
+import com.github.katemerek.FirstSecurityApp.repositories.PeopleRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.merkulova.springcourse.FirstSecurityApp.models.Person;
-import ru.merkulova.springcourse.FirstSecurityApp.repositories.PeopleRepository;
+import com.github.katemerek.FirstSecurityApp.models.Person;
 
 @Service
 public class RegistrationService {

@@ -1,9 +1,8 @@
-package ru.merkulova.springcourse.FirstSecurityApp.controllers;
+package com.github.katemerek.FirstSecurityApp.controllers;
 
+import com.github.katemerek.FirstSecurityApp.services.AdminService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import ru.merkulova.springcourse.FirstSecurityApp.services.AdminService;
 
 @Controller
 public class HelloController {

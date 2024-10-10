@@ -1,4 +1,4 @@
-package ru.merkulova.springcourse.FirstSecurityApp;
+package com.github.katemerek.FirstSecurityApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

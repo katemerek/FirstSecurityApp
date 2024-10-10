@@ -1,5 +1,7 @@
-package ru.merkulova.springcourse.FirstSecurityApp.controllers;
+package com.github.katemerek.FirstSecurityApp.controllers;
 
+import com.github.katemerek.FirstSecurityApp.models.Person;
+import com.github.katemerek.FirstSecurityApp.services.RegistrationService;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -7,8 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ru.merkulova.springcourse.FirstSecurityApp.models.Person;
-import ru.merkulova.springcourse.FirstSecurityApp.services.RegistrationService;
 
 @Controller
 @RequestMapping("/auth")
@@ -36,7 +36,6 @@ public class AuthController {
             return "/registration";
         }
         registrationService.register(person);
-
         return "redirect:/auth/login";
     }
 }
