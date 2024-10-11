@@ -22,4 +22,4 @@ The app will start running at <http://localhost:8080>.
 
  POST /auth/registration
 
- POST test test test
+
