@@ -1,7 +1,6 @@
 package com.github.katemerek.FirstSecurityApp.util;
 
 
-import com.github.katemerek.FirstSecurityApp.dto.PersonDto;
 import com.github.katemerek.FirstSecurityApp.models.Person;
 import com.github.katemerek.FirstSecurityApp.services.PersonDetailsService;
 import org.springframework.http.HttpStatus;
@@ -27,7 +26,7 @@ public class PersonValidator implements Validator {
     public void validate(Object target, Errors errors) {
         Person person = (Person) target;
         if (personDetailsService.findByUserName(person.getUsername()).isPresent())
-            errors.rejectValue("username", String.valueOf(HttpStatus.BAD_REQUEST), "This Person is already exist!");
+            errors.rejectValue("username", String.valueOf(HttpStatus.BAD_REQUEST), "Человек с таким именем уже есть в базе данных!");
     }
 }
 
