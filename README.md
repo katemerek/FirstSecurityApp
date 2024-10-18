@@ -10,7 +10,7 @@ All new users are given the user role, the admin is assigned manually and has ac
 - Pass authentication, which will redirect you to the page "Hello" in case of successful authentication.
 
 Due to the presence of views in the project, you can test the API in your browser.
-The app will start running at <http://localhost:8080>.
+The app will start running at <http://localhost:8080/api/v1>.
 ### Rest APIs
  GET /hello
 
