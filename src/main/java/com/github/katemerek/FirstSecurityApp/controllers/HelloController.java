@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("/api/v1")
 public class HelloController {
 
     private final AdminService adminService;
